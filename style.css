@@ -1,0 +1,666 @@
+/* Reset general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    background-color: #fff;
+    color: #333;
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    /* Habilita flexbox */
+    justify-content: space-between;
+    /* Distribuye elementos entre los extremos */
+    align-items: center;
+    /* Centra los elementos verticalmente */
+    padding: 0 20px;
+    /* Espaciado horizontal */
+    background-color: #fff;
+    /* Color de fondo opcional */
+}
+
+/* Contenedor derecho */
+.nav-right {
+    display: flex;
+    align-items: center;
+    /* Centra verticalmente */
+    gap: 20px;
+    /* Espacio entre los elementos */
+}
+
+
+/* Estilo del logo */
+.nav-logo img {
+    height: 100px;
+    padding-left: 40px;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: flex-start;
+    /* Alinea al inicio en el eje vertical */
+    justify-content: flex-start;
+    /* Alinea al inicio en el eje horizontal */
+    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.hero-text {
+    text-align: left;
+    /* Asegura que el texto esté alineado a la izquierda */
+}
+
+.hero-title {
+    width: 650px;
+    height: 144px;
+}
+
+.hero-title h1 {
+    font-family: 'Roboto', poppins;
+    font-size: 48px;
+    margin: 0 auto;
+    color: #000;
+}
+
+.hero-description {
+    margin: 0 auto;
+    /* Asegura que esté centrado horizontalmente */
+    text-align: left;
+    /* Centra el texto dentro del contenedor */
+    box-sizing: border-box;
+    /* Asegura que el padding no afecte el ancho total */
+}
+
+.hero-description p {
+    font-size: 18px;
+    /* Tamaño de fuente base */
+    margin: 10px 0;
+    /* Espaciado vertical entre párrafos */
+    text-align: left;
+    /* Centra el texto */
+    line-height: 1.5;
+    /* Mejora la legibilidad */
+}
+
+.hero-description span {
+    font-size: 18px;
+    /* Tamaño del texto en span */
+    font-weight: bold;
+    /* Opcional: Destacar el span */
+    display: inline-block;
+    /* Asegura que se comporte correctamente en diferentes resoluciones */
+    margin: 10px 0px;
+}
+
+
+.hero-image img {
+    margin-left: -150px;
+    margin-top: -80px;
+    width: 652.19px;
+    /* Asegura que la imagen ocupe todo el contenedor */
+    height: 652.19px;
+    /* Asegura que la imagen se ajuste proporcionalmente */
+    object-fit: cover;
+    /* Mantén el aspecto de la imagen */
+    transform: rotate(-0.99deg);
+    /* Gira la imagen con el ángulo especificado */
+    transition: all 0.3s ease;
+    /* Suaviza la transición si cambias el tamaño */
+}
+
+.subscription-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    /* Sin espacio entre los elementos */
+    width: 100%;
+    max-width: 600px;
+    /* Ancho máximo para pantallas grandes */
+    margin: 0 auto;
+    /* Centrar en la página */
+    border: 2px solid #E6C80A;
+    /* Color del borde (amarillo) */
+    border-radius: 50px;
+    /* Bordes redondeados */
+    overflow: hidden;
+    /* Asegura que el borde redondeado se aplique */
+
+}
+
+/* Campo de entrada */
+.email-input {
+    flex: 1;
+    /* Ocupa el espacio restante */
+    border: none;
+    padding: 15px 20px;
+    font-size: 16px;
+    outline: none;
+    color: #555;
+    /* Color del texto */
+}
+
+.email-input::placeholder {
+    color: #aaa;
+    /* Color del placeholder */
+}
+
+/* Botón */
+.subscribe-button {
+    padding: 15px 25px;
+    border: none;
+    background: linear-gradient(to right, #E6C80A, #50AA0A);
+    /* Degradado amarillo-verde */
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    white-space: nowrap;
+    /* Evita que el texto se divida en varias líneas */
+    border-radius: 50px;
+}
+
+
+
+/* Features Section */
+.features {
+    text-align: center;
+    padding: 40px 20px; /* Espaciado uniforme */
+    margin: 0 auto; /* Centra la sección */
+    max-width: 1200px; /* Ancho máximo para pantallas grandes */
+  }
+  
+  .features-title {
+    font-size: 34px; /* Tamaño del título en pantallas grandes */
+    font-family: 'Roboto', 'Poppins', sans-serif; /* Fuentes con respaldo */
+    margin-bottom: 20px; /* Espaciado inferior */
+    text-align: center;
+  }
+  
+  .feature-list {
+    display: flex;
+    justify-content: center; /* Centra las características */
+    flex-wrap: wrap; /* Permite que los elementos pasen a la siguiente fila en pantallas pequeñas */
+    gap: 30px; /* Espacio entre elementos */
+  }
+  
+  .feature {
+    text-align: center; /* Alineación central de los elementos */
+    width: calc(33.33% - 20px); /* Distribución uniforme en filas de 3 */
+    box-sizing: border-box; /* Asegura que padding y border no afecten el ancho total */
+  }
+  
+  .feature img {
+    width: 80px; /* Tamaño uniforme para las imágenes */
+    height: 80px; /* Altura fija */
+    object-fit: contain; /* Mantén las proporciones originales */
+    margin-bottom: 15px; /* Espaciado debajo de la imagen */
+  }
+  
+  .feature-title {
+    font-size: 18px; /* Tamaño del texto de la característica */
+    margin-top: 10px; /* Espaciado superior */
+  }
+
+
+  .founders {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .founders-title {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: #000; /* Cambiar según la paleta */
+    margin-bottom: 30px;
+  }
+  
+  /* Grid Container */
+  .founders-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Espaciado entre los fundadores */
+    flex-wrap: wrap; /* Permite que los elementos pasen a la siguiente línea en pantallas pequeñas */
+  }
+  
+  /* Founder Card */
+  .founder {
+    text-align: center;
+    max-width: 250px; /* Controla el ancho de cada tarjeta */
+  }
+  
+  .founder-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%; /* Hace que las imágenes sean circulares */
+    object-fit: cover; /* Asegura que las imágenes mantengan proporciones */
+    margin-bottom: 15px;
+  }
+  
+  .founder-name {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000; /* Cambiar según la paleta */
+    margin-bottom: 5px;
+  }
+  
+  .founder-role {
+    font-size: 16px;
+    color: #333; /* Cambiar según la paleta */
+    margin-bottom: 5px;
+  }
+  
+  .founder-subtitle {
+    font-size: 14px;
+    color: #555; /* Cambiar según la paleta */
+  }
+
+.footer-info,
+.footer-legal,
+.footer-contact {
+    flex: 1;
+    padding: 10px;
+}
+
+.cta-button:hover {
+    background: linear-gradient(90deg, #8cc943, #28a745);
+}
+
+/* Footer */
+footer {
+    background: linear-gradient(90deg, #50AA0A, #E6C80A);
+    color: white;
+    padding: 20px 20px;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    gap: 10px;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-content div {
+    flex: 1 1 200px;
+    /* Mínimo 200px, se expanden según el espacio */
+    max-width: 300px;
+    text-align: left;
+}
+
+.footer-content h4 {
+    font-size: 1.2rem;
+}
+
+.footer-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-content ul li {
+    margin: 5px 0;
+}
+
+.footer-content ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-content ul li a:hover {
+    text-decoration: underline;
+}
+
+.footer-content .logo img {
+    transform: rotate(-9deg);
+    /* Gira la imagen con el ángulo especificado */
+    height: 62px;
+    width: 143px;
+}
+
+
+.links,
+.legal,
+.contacto {
+    color: white;
+}
+
+.links ul,
+.legal ul,
+.contacto ul {
+    list-style: none;
+    padding: 0;
+}
+
+.links li,
+.legal li,
+.contacto li {
+    margin-bottom: 10px;
+}
+
+.links a,
+.legal a,
+.contacto a {
+    color: white;
+    text-decoration: none;
+}
+
+.links a:hover,
+.legal a:hover,
+.contacto a:hover {
+    text-decoration: underline;
+}
+
+.main-section-text h1 {
+    font-size: 34px;
+    font-family: 'Roboto', poppins;
+    justify-content: center;
+    margin-top: 0px;
+}
+
+.main-section-text p {
+    font-size: 16px;
+    font-family: 'Roboto', poppins;
+    justify-content: center;
+    padding: 20px 150px;
+}
+
+/* Estilo general */
+.email-signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+
+.signup-form {
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    overflow: hidden;
+    max-width: 600px;
+    width: 100%;
+}
+
+.signup-form input {
+    flex: 1;
+    border: none;
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    border-radius: 50px 0 0 50px;
+    outline: none;
+}
+
+.signup-form button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.2rem;
+    font-size: 1rem;
+    border-radius: 0 50px 50px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.signup-form button:hover {
+    background-color: #43a047;
+}
+
+/* Media Query para pantallas muy pequeñas */
+@media (max-width: 480px) {
+
+    /* Ajuste más extremo para pantallas más pequeñas */
+    .navbar {
+        padding: 10px 15px;
+    }
+
+    .hero {
+        flex-direction: column;
+        /* Apilar los elementos verticalmente */
+        padding: 20px;
+        /* Menos espacio */
+        justify-content: center;
+        /* Centrar los elementos */
+        align-items: center;
+        /* Centrar los elementos */
+    }
+
+    .hero-title h1 {
+        max-width: 480px;
+        font-size: 30px;
+        /* Reducir el tamaño del título */
+        text-align: center;
+        /* Alinear el texto al centro */
+    }
+
+    .hero-description {
+        max-width: 480px;
+        text-align: center;
+        justify-content: center;
+
+    }
+
+    .hero-description p {
+        font-size: 14px;
+        /* Fuente más pequeña en pantallas tablet */
+        text-align: center;
+        /* Alinea el texto al centro en pantallas pequeñas */
+        margin-top: none;
+        justify-content: center;
+
+    }
+
+    .hero-description span {
+        font-size: 17px;
+        /* Ajusta aún más el span */
+    }
+
+    .hero-image img {
+        display: none;
+    }
+
+    .subscription-container {
+        flex-direction: column;
+        /* Cambia a diseño vertical */
+        max-width: max-content;
+        padding: 10px;
+        gap: 10px;
+        /* Añade espacio entre el campo y el botón */
+    }
+
+    .email-input,
+    .subscribe-button {
+        width: 100%;
+        /* Ocupan todo el ancho disponible */
+        text-align: center;
+        /* Centrar contenido */
+    }
+
+    .subscribe-button {
+        padding: 15px;
+        /* Ajusta el padding en pantallas pequeñas */
+    }
+
+    .features-title {
+        font-size: 20px; /* Reduce más el título */
+      }
+    
+      .feature {
+        width: 100%; /* 1 elemento por fila en pantallas pequeñas */
+        margin-bottom: 20px; /* Añade espacio entre las filas */
+      }
+    
+      .feature img {
+        width: 60px; /* Tamaño más pequeño para las imágenes */
+        height: 60px;
+      }
+    
+      .feature-title {
+        font-size: 14px; /* Tamaño del texto más pequeño */
+      }
+
+      .main-section-text p {
+        font-size: 16px;
+        font-family: 'Roboto', poppins;
+        justify-content: center;
+        padding: 20px 0px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: start;
+        max-width: 100%;
+    }
+
+    .footer-content div {
+        max-width: 100%;
+        /* Ocupa todo el ancho en pantallas pequeñas */
+        text-align: center;
+    }
+
+}
+
+/* Media Query para pantallas pequeñas */
+@media (max-width: 768px) {
+
+    /* Cambia la distribución de la navbar */
+    .navbar {
+        padding: 10px;
+    }
+
+    /* Ajuste para la sección derecha */
+    .nav-right {
+        width: 100%;
+        justify-content: right;
+        flex-direction: row-reverse;
+        gap: 10px;
+    }
+
+    /* Ajuste de la imagen del logo */
+    .nav-logo img {
+        height: 80px;
+        padding-left: 0;
+    }
+
+    .hero {
+        flex-direction: column;
+        /* Apilar los elementos verticalmente */
+        justify-content: center;
+        /* Centrar los elementos */
+        align-items: center;
+        /* Centrar los elementos */
+    }
+
+    .hero-title h1 {
+        font-size: 30px;
+        /* Reducir el tamaño del título */
+        text-align: center;
+        /* Alinear el texto al centro */
+    }
+
+    .hero-description {
+        max-width: 50%;
+        /* Ocupa casi todo el ancho disponible en pantallas pequeñas */
+        padding: 0 15px;
+        /* Reduce el padding lateral */
+    }
+
+    .hero-description p {
+        font-size: 18px;
+        /* Reduce el tamaño de fuente en dispositivos pequeños */
+    }
+
+    .hero-description span {
+        font-size: 16px;
+        /* Ajusta el span en móviles */
+    }
+
+    .hero-image img {
+        width: 400px;
+        /* Reducir el tamaño de la imagen */
+        height: 400px;
+        margin-left: 0;
+        margin-top: 0;
+        transform: rotate(0);
+        /* Eliminar la rotación */
+    }
+
+    .subscription-container {
+        max-width: max-content;
+        flex-direction: column;
+        /* Cambia a diseño vertical */
+        padding: 10px;
+        gap: 10px;
+        /* Añade espacio entre el campo y el botón */
+    }
+
+    .features-title {
+        font-size: 20px; /* Reduce más el título */
+      }
+    
+      .feature {
+        width: 100%; /* 1 elemento por fila en pantallas pequeñas */
+        margin-bottom: 20px; /* Añade espacio entre las filas */
+      }
+    
+      .feature img {
+        width: 60px; /* Tamaño más pequeño para las imágenes */
+        height: 60px;
+      }
+    
+      .feature-title {
+        font-size: 14px; /* Tamaño del texto más pequeño */
+      }
+
+    .email-input,
+    .subscribe-button {
+        width: 100%;
+        /* Ocupan todo el ancho disponible */
+        text-align: center;
+        /* Centrar contenido */
+    }
+
+    .subscribe-button {
+        padding: 15px;
+        /* Ajusta el padding en pantallas pequeñas */
+    }
+
+    footer {
+        padding: none;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        align-items: start;
+        max-width: 100%;
+    }
+
+    .footer-content div {
+        align-content: center;
+        align-items: center;
+        display: flex;
+        flex: none;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        height: min-content;
+        justify-content: center;
+        overflow: hidden;
+        padding: 0;
+    }
+
+}
