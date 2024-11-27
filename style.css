@@ -424,6 +424,15 @@ footer {
 /* Media Query para pantallas muy pequeñas */
 @media (max-width: 480px) {
 
+    .hero-text {
+        display: flex;
+        flex-direction: column; /* Asegura que los elementos se apilen verticalmente */
+        align-items: center; /* Centra horizontalmente el contenido */
+        text-align: center; /* Centra el texto dentro del contenedor */
+        padding: 10px;
+        width: 100%;
+    }
+
     /* Ajuste más extremo para pantallas más pequeñas */
     .navbar {
         padding: 10px 15px;
@@ -449,7 +458,6 @@ footer {
     }
 
     .hero-description {
-        max-width: 480px;
         text-align: center;
         justify-content: center;
 
@@ -574,8 +582,6 @@ footer {
     }
 
     .hero-description {
-        max-width: 50%;
-        /* Ocupa casi todo el ancho disponible en pantallas pequeñas */
         padding: 0 15px;
         /* Reduce el padding lateral */
     }
